@@ -1,0 +1,133 @@
+#gamePage {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: top;
+  background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwallup.net%2Fwp-content%2Fuploads%2F2019%2F09%2F1008225-nature-winter-snow-urban-grayscale-nowfall-hd-wallpapers-1080p.jpg&f=1&nofb=1&ipt=9bf9d23cf9c7fdd205761f73231e47b7c984d233a5bf898a5e770ac876191c56&ipo=images");
+  width: 100%;
+  height: 100vh;
+}
+
+#gameContainer {
+  display: flex;
+  justify-content: center;
+}
+
+#gameContainer section {
+  padding: 4rem;
+  border-radius: 6rem;
+  height: 100%;
+}
+
+#trackSection {
+  display: flex;
+  flex-direction: column;
+}
+
+#trackSection h2 {
+  text-align: center;
+}
+.track {
+  padding: 1rem;
+}
+
+.trackButton {
+  margin-right: 2rem;
+}
+
+#trackName {
+  color: #ffff;
+}
+
+.artist {
+  padding: 0.5rem;
+  color: #ffff;
+  display: flex;
+  align-items: center;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  font-size: 13px;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  width: 100px;
+  text-align: center;
+}
+button:hover {
+  background-color: #1db954;
+  color: #ffffff;
+}
+
+#changeConfigBtn {
+  width: 200px;
+  margin-left: 2rem;
+}
+
+#artistSectionBtnContainer {
+  padding-top: 1rem;
+}
+
+#guessNotification {
+  color: #ffff;
+  display: inline-block;
+  padding: 1.5rem;
+  border-radius: 5rem;
+  background-color: #212121;
+  margin: 0;
+}
+
+#guessNotification:empty {
+  padding: 0;
+}
+
+#guessContainer {
+  text-align: center;
+}
+
+#gamePageHeader {
+  text-align: center;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+}
+
+.artist-image {
+  margin: auto 10px;
+  height: 40px;
+  width: 40px;
+}
+
+.error {
+  color: #e7195a;
+}
+
+#artistChoiceSection,
+#trackSection {
+  background-color: #212121;
+  margin: 2rem;
+}
+
+@media (max-width: 800px) {
+  #gameContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #gamePageHeader {
+    margin: 0;
+  }
+  #trackSection h2,
+  #artistChoiceSection h2 {
+    margin: 0.8rem;
+  }
+
+  #gamePage {
+    height: 100%;
+  }
+}
